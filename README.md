@@ -15,3 +15,11 @@ $ npm run dev # run development!
 $ npm run build # build typescript project
 $ npm start # run in development mode
 ```
+
+## Test
+
+Test are using [Peeky](https://peeky.dev/). Don't worry its the same API as Jest!
+
+```
+$ npm test
+```
