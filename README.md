@@ -18,7 +18,7 @@ $ npm start # run in development mode
 
 ## Test
 
-Test are using [Peeky](https://peeky.dev/). Don't worry its the same API as Jest!
+Test are using [vitest](https://vitest.dev/). Don't worry its the same API as Jest! I choose this because this are more easy to setup when using Typescript
 
 ```
 $ npm test
