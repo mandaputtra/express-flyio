@@ -3,18 +3,17 @@ on: [push, pull_request]
 
 jobs:
   test:
-    name: Test and Coverage
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.x]
+
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
       - name: Execute test
-      - run: npm ci --frozen-lockfile --include=dev
+      - run: npm ci --include=dev
       - run: npm run coverage
